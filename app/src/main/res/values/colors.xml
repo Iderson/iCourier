@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="transparent">#00FFFFFF</color>
+    <color name="black_10">#19000000</color>
+    <color name="black_80">#92000000</color>
+    <color name="black_40">#6e000000</color>
+    <color name="black">#000000</color>
+    <color name="dark_blue">#0076C1</color>
+    <color name="turquoise">#00CAE6</color>
+    <color name="turquoise_16">#5000cae6</color>
+    <color name="turquoise_50">#2800cae6</color>
+    <color name="turquoise_dark">#009db3</color>
+    <color name="desert">#F8F8F8</color>
+    <color name="white">#fff</color>
+    <color name="gray">#999</color>
+    <color name="platinum">#E3E3E3</color>
+    <color name="gray_hint">#BDBEBF</color>
+    <color name="frame_gray_light">#555555</color>
+    <color name="divider_gray">#ccc</color>
+    <color name="divider_gray_light">#f0f0f0</color>
+    <color name="green_light">#00E3A6</color>
+    <color name="green">#2DCC70</color>
+    <color name="green_5">#0c2dcc70</color>
+    <color name="green_light_dark">#00b987</color>
+    <color name="turquoise_90">#20D4EB</color>
+    <color name="turquoise_light">#B2EFF7</color>
+    <color name="white_50">#56ffffff</color>
+    <color name="white_10">#19ffffff</color>
+    <color name="fb_color">#3B5998</color>
+    <color name="fb_color_30">#aa3b5998</color>
+    <color name="tw_color">#55ACEE</color>
+    <color name="tw_color_30">#aa55acee</color>
+    <color name="vk_color">#4D75A3</color>
+    <color name="vk_color_30">#aa4d75a3</color>
+</resources>

@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:gravity="center_horizontal"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/entity_price_text"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/entity_text"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:layout_marginTop="18dp"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:minHeight="44dp"
+                android:background="@drawable/selector_default_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/entity_price_edit"
+                    android:text="3000"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:hint="@string/sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="21dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:text="@string/company_name_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/recharge_entity_ripple_name"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/recharge_entity_name"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/company_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="21dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:text="@string/inn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/recharge_entity_ripple_inn"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/recharge_entity_inn"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/inn_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="21dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:text="@string/bik"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/recharge_entity_ripple_bik"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/recharge_entity_bik"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/bik_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="21dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:text="@string/checking_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/recharge_entity_ripple_checking_account"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/recharge_entity_checking_account"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/checking_account_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:text="@string/email_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/recharge_entity_ripple_email"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/recharge_entity_email"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/email_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <FrameLayout
+            android:layout_marginTop="31dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_turquoise_dark_frame"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@string/send_to_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

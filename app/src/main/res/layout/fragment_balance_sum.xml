@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:textSize="13sp"
+        android:textColor="@color/gray"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="@string/transaction_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_marginTop="58dp"
+        android:layout_height="1dp" />
+    <EditText
+        android:id="@+id/balance_sum"
+        android:textColorHint="@color/gray_hint"
+        android:gravity="center"
+        android:hint="@string/sum"
+        android:textSize="15sp"
+        android:textColor="@color/frame_gray_light"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+    <View
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    
+    <FrameLayout
+        android:id="@+id/balance_sum_action"
+        android:background="@drawable/selector_turquoise_dark_frame"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="21dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:layout_gravity="center"
+            android:text="@string/continue_upper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</LinearLayout>

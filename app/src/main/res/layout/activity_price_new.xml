@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+    <FrameLayout
+        android:background="@color/turquoise"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <FrameLayout
+            android:id="@+id/price_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_left"
+                android:layout_width="22dp"
+                android:layout_height="15dp" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/price_title"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="Укажите стоимость"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <EditText
+        android:layout_centerInParent="true"
+        android:id="@+id/price_number"
+        android:inputType="number"
+        android:textColor="@color/frame_gray_light"
+        android:gravity="center"
+        android:hint="@string/zero"
+        android:textColorHint="@color/gray_hint"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="44dp" />
+    <View
+        android:layout_above="@id/price_number"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:layout_height="1dp" />
+    <View
+        android:layout_below="@id/price_number"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+    <FrameLayout
+        android:layout_below="@id/price_number"
+        android:id="@+id/price_action"
+        android:layout_marginTop="21dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="@drawable/selector_turquoise_dark_frame"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:id="@+id/tvCode"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="@string/ready_upper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</RelativeLayout>

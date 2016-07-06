@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    tools:context=".activities.RegisterCourierActivity">
+    <FrameLayout
+        android:background="@color/turquoise"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <FrameLayout
+            android:id="@+id/register_courier_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_left"
+                android:layout_width="22dp"
+                android:layout_height="15dp" />
+        </FrameLayout>
+        <TextView
+            android:text="@string/add_car"
+            android:fontFamily="sans-serif-medium"
+            android:id="@+id/courier_title"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <TextView
+        android:layout_marginTop="21dp"
+        android:textColor="@color/turquoise"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/main_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_gravity="bottom"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/add_car_mark"
+        android:layout_marginTop="3dp"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/turquoise_50"
+        app:mrl_rippleDuration="400"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleFadeDuration="300"
+        android:layout_width="match_parent"
+        android:minHeight="44dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:minHeight="44dp"
+            android:background="@drawable/selector_default_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/add_car_make_edit"
+                android:textColorHint="@color/gray_hint"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/frame_gray_light"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:hint="@string/mark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/arrow_right"
+                android:layout_width="7dp"
+                android:layout_height="13dp" />
+        </FrameLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="bottom"
+        android:background="@color/desert"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/add_car_model"
+        android:layout_marginTop="3dp"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/turquoise_50"
+        app:mrl_rippleDuration="400"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleFadeDuration="300"
+        android:layout_width="match_parent"
+        android:minHeight="44dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:minHeight="44dp"
+            android:background="@drawable/selector_default_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/add_car_model_edit"
+                android:textColorHint="@color/gray_hint"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/frame_gray_light"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:hint="@string/model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/arrow_right"
+                android:layout_width="7dp"
+                android:layout_height="13dp" />
+        </FrameLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="bottom"
+        android:background="@color/desert"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/add_car_number"
+        android:layout_marginTop="3dp"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/turquoise_50"
+        app:mrl_rippleDuration="400"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleFadeDuration="300"
+        android:layout_width="match_parent"
+        android:minHeight="44dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:minHeight="44dp"
+            android:background="@drawable/selector_default_ripple"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/add_car_number_edit"
+                android:textColorHint="@color/gray_hint"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/frame_gray_light"
+                android:textSize="15sp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:hint="@string/number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <View
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_gravity="bottom"
+        android:background="@color/desert"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_marginTop="31dp"
+        android:textColor="@color/turquoise"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/documents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_gravity="bottom"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/courier_individual_docs_rights"
+        android:layout_marginTop="3dp"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/turquoise_50"
+        app:mrl_rippleDuration="400"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleFadeDuration="300"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <FrameLayout
+            android:background="@drawable/selector_default_ripple"
+            android:minHeight="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/selector_rights_check"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/doc_un_check"
+                android:layout_width="14dp"
+                android:layout_height="14dp" />
+            <TextView
+                android:clickable="false"
+                android:enabled="false"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/frame_gray_light"
+                android:text="@string/rights"
+                android:textSize="15sp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/courier_individual_docs_sts"
+        android:layout_marginTop="3dp"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/turquoise_50"
+        app:mrl_rippleDuration="400"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleFadeDuration="300"
+        android:minHeight="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <FrameLayout
+            android:background="@drawable/selector_default_ripple"
+            android:minHeight="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/selector_sts_check"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/doc_un_check"
+                android:layout_width="14dp"
+                android:layout_height="14dp" />
+            <TextView
+                android:clickable="false"
+                android:enabled="false"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/frame_gray_light"
+                android:text="@string/sts"
+                android:textSize="15sp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>>
+    <View
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_gravity="bottom"
+            android:id="@+id/add_car_action"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/selector_turquoise_dark_frame"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="@string/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

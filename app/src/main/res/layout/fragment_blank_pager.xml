@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/blank_pager_container"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/blank_map_container"
+        android:layout_width="match_parent"
+        android:layout_height="184dp">
+        <FrameLayout
+            android:id="@+id/blank_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:id="@+id/blank_map_view"
+            android:background="@drawable/background_gradient_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:background="@drawable/pin_main2x"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_width="25dp"
+            android:layout_height="40dp" />
+
+        <FrameLayout
+            android:id="@+id/blank_map_location"
+            android:visibility="gone"
+            android:layout_above="@+id/blank_map_screen_change"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_white_turquoise_transparent_oval_frame"
+            android:layout_width="48dp"
+            android:layout_height="48dp" >
+            <ImageView
+                android:background="@drawable/my_location"
+                android:layout_gravity="center"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/blank_map_screen_change"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_white_turquoise_transparent_oval_frame"
+            android:layout_width="48dp"
+            android:layout_height="48dp" >
+            <ImageView
+                android:background="@drawable/selector_change_screen_icon"
+                android:layout_gravity="center"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:layout_marginBottom="75dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/background_black_transparent"
+            android:layout_width="wrap_content"
+            android:layout_height="26dp">
+            <TextView
+                android:id="@+id/blank_courier_count"
+                android:textSize="14sp"
+                android:textColor="@color/desert"
+                android:paddingLeft="10dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingRight="10dp"
+                android:layout_gravity="center"
+                android:text="@string/couriers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <FrameLayout
+            android:layout_width="56dp"
+            android:layout_height="56dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_left"
+                android:layout_width="22dp"
+                android:layout_height="16dp" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/blank_title"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="@string/sender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <com.iv.icourier.views.NonSwipableViewPager
+        android:id="@+id/blank_pager"
+        android:layout_below="@+id/blank_map_container"
+        android:layout_above="@+id/blank_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.iv.icourier.views.NonSwipableViewPager
+        android:id="@+id/blank_pager_for_description"
+        android:layout_above="@+id/blank_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/blank_tabs"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/blank_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <View
+            android:id="@+id/blank_tab_one"
+            android:background="@drawable/selector_tab_blank"
+            android:layout_width="7dp"
+            android:layout_height="7dp" />
+        <View
+            android:id="@+id/blank_tab_two"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/selector_tab_blank"
+            android:layout_width="7dp"
+            android:layout_height="7dp" />
+        <View
+            android:id="@+id/blank_tab_three"
+            android:background="@drawable/selector_tab_blank"
+            android:layout_width="7dp"
+            android:layout_height="7dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/blank_next"
+        android:background="@drawable/selector_turquoise_dark_frame"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:id="@+id/blank_next_text"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:text="@string/next"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/blank_back"
+        android:layout_width="56dp"
+        android:layout_height="56dp" />
+</RelativeLayout>

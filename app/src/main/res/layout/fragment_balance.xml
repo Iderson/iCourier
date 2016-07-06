@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:src="@drawable/cash_large_icon"
+            android:layout_width="97dp"
+            android:layout_height="87dp" />
+
+        <TextView
+            android:textColor="@color/gray"
+            android:textSize="16sp"
+            android:layout_marginTop="40dp"
+            android:text="@string/your_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="@color/frame_gray_light"
+            android:textSize="48sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:id="@+id/balance_push"
+            android:background="@drawable/selector_turquoise_dark_frame"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" >
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@string/push_to_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/balance_pull"
+            android:background="@drawable/selector_turquoise_stroke_dark_frame"
+            android:layout_margin="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp" >
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/turquoise"
+                android:layout_gravity="center"
+                android:text="@string/pull_out"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

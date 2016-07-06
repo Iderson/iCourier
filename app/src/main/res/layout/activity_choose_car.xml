@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="@color/white"
+    tools:context="com.iv.icourier.activities.ChooseCarActivity">
+    
+    <ProgressBar
+        android:id="@+id/pbLoadList"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/choose_car_toolbar"
+        android:background="@color/turquoise"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <FrameLayout
+            android:id="@+id/choose_car_back"
+            android:layout_width="44dp"
+            android:layout_height="44dp">
+            <ImageView
+                android:layout_gravity="center"
+                android:src="@drawable/arrow_left"
+                android:layout_width="22dp"
+                android:layout_height="15dp" />
+        </FrameLayout>
+        <TextView
+            android:id="@+id/title"
+            android:text="@string/choose_car"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/choose_car_recycler"
+        android:layout_above="@+id/choose_car_action"
+        android:layout_below="@+id/choose_car_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <FrameLayout
+        android:id="@+id/choose_car_action"
+        android:layout_margin="15dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/selector_turquoise_dark_frame"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <TextView
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="@string/take_order_with_the_car"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</RelativeLayout>

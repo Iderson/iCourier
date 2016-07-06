@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:background="@color/white">
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:text="@string/name_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/balance_transaction_ripple_name"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/balance_transaction_name"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/write_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:text="@string/last_name_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/balance_transaction_ripple_last_name"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/balance_transaction_last_name"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/write_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:text="@string/batya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/balance_transaction_ripple_full_name"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/balance_transaction_full_name"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/write_batya"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:text="@string/dob_upper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/balance_transaction_ripple_dob"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/balance_transaction_dob"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/write_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:text="@string/card_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/balance_transaction_ripple_card"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/balance_transaction_card"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_gravity="start"
+            android:text="@string/to_getting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:textSize="27sp"
+            android:textColor="@color/frame_gray_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="@color/gray"
+            android:textSize="13sp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@+id/balance_transaction_action"
+            android:background="@drawable/selector_turquoise_dark_frame"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:layout_gravity="center"
+                android:text="@string/continue_upper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

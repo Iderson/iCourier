@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:background="@color/turquoise"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <FrameLayout
+                android:layout_width="44dp"
+                android:layout_height="44dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/arrow_left"
+                    android:layout_width="22dp"
+                    android:layout_height="15dp" />
+            </FrameLayout>
+            <TextView
+                android:textSize="17sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@string/description_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/that_take"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/blank_description_furniture_ripple_what"
+            android:layout_marginTop="3dp"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:minHeight="44dp"
+                android:background="@drawable/selector_default_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/blank_description_furniture_what_edit"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/what"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+
+        <View
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/blank_description_furniture_ripple_comment"
+            android:layout_marginTop="3dp"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:layout_height="132dp">
+            <FrameLayout
+                android:minHeight="44dp"
+                android:background="@drawable/selector_default_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:id="@+id/blank_description_furniture_comment_edit"
+                    android:layout_marginTop="13dp"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:hint="@string/comment_for_order"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/blank_description_furniture_ripple_size"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/dimensions_icon"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp" />
+                <TextView
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="49dp"
+                    android:text="@string/dimensions"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/blank_description_furniture_text_size"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical|end"
+                    android:textColor="@color/gray"
+                    android:textSize="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="9dp"
+                    android:layout_height="13dp" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="49dp"
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <RelativeLayout
+            android:background="@drawable/selector_default_ripple"
+            android:minHeight="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="48dp">
+            <ImageView
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/loaders_icon"
+                android:layout_width="14dp"
+                android:layout_height="14dp" />
+            <TextView
+                android:textColorHint="@color/gray_hint"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:layout_centerVertical="true"
+                android:textColor="@color/frame_gray_light"
+                android:textSize="15sp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="49dp"
+                android:text="@string/loaders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/description_furniture_loaders_count"
+                android:layout_marginRight="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_toLeftOf="@+id/description_furniture_loaders_frame"
+                android:layout_toStartOf="@+id/description_furniture_loaders_frame"
+                android:textColorHint="@color/gray_hint"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:layout_centerVertical="true"
+                android:textColor="@color/gray"
+                android:textSize="15sp"
+                android:text="0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:id="@+id/description_furniture_loaders_frame"
+                android:orientation="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="17dp"
+                android:layout_marginEnd="17dp"
+                android:layout_width="123dp"
+                android:layout_height="26dp">
+                <FrameLayout
+                    android:id="@+id/description_furniture_loaders_plus"
+                    android:background="@drawable/selector_turquoise_without_right_wall"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="20sp"
+                        android:text="@string/plus"
+                        android:textColor="@drawable/selector_turquoise_white_color_text"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+                <View
+                    android:background="@color/turquoise"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"/>
+                <FrameLayout
+                    android:id="@+id/description_furniture_loaders_minus"
+                    android:background="@drawable/selector_turquoise_without_left_wall"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="20sp"
+                        android:text="@string/minus"
+                        android:textColor="@drawable/selector_turquoise_white_color_text"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+            </LinearLayout>
+            <View
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="49dp"
+                android:layout_alignParentBottom="true"
+                android:background="@color/divider_gray_light"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+        </RelativeLayout>
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/description_furniture_packaging"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/packaging_icon"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp" />
+                <TextView
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="49dp"
+                    android:text="@string/packaging"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.SwitchCompat
+                    app:showText="false"
+                    android:clickable="false"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:id="@+id/description_furniture_toggle"
+                    android:layout_width="51dp"
+                    android:layout_height="31dp"/>
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="49dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/price_upper"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/description_furniture_price"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/bill"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp" />
+                <EditText
+                    android:id="@+id/description_furniture_price_number"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="49dp"
+                    android:text="@string/zero"
+                    android:hint="@string/price_upper"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <LinearLayout
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="16dp"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/description_furniture_price_info_icon"
+                android:src="@drawable/danger_icon"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+            <TextView
+                android:textColor="@color/gray"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp"
+                android:text="@string/you_have_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/description_furniture_price_text"
+                android:textColor="@color/frame_gray_light"
+                android:text="@string/zero"
+                android:layout_marginLeft="6dp"
+                android:layout_marginStart="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

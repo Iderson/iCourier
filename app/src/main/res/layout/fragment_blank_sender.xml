@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:background="@color/white"
+            tools:context="com.iv.icourier.fragments.blankFragments.BlankSenderFragment">
+<LinearLayout
+    android:orientation="vertical"
+    android:animateLayoutChanges="true"
+    android:id="@+id/blank_sender_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/blank_sender_view"
+        android:layout_width="match_parent"
+        android:layout_height="184dp" />
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textColor="@color/turquoise"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/where_your_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_gravity="bottom"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/blank_sender_ripple_where"
+        android:layout_marginTop="3dp"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/turquoise_50"
+        app:mrl_rippleDuration="400"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleFadeDuration="300"
+        android:layout_width="match_parent"
+        android:minHeight="44dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:background="@drawable/selector_default_ripple"
+            android:minHeight="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/location_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <EditText
+                android:id="@+id/blank_sender_where"
+                android:focusable="false"
+                android:textColorHint="@color/gray_hint"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/frame_gray_light"
+                android:textSize="15sp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:hint="@string/where_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/arrow_right"
+                android:layout_width="7dp"
+                android:layout_height="13dp" />
+        </FrameLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <View
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_gravity="bottom"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/blank_sender_ripple_comment"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/turquoise_50"
+        app:mrl_rippleDuration="400"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleFadeDuration="300"
+        android:layout_width="match_parent"
+        android:minHeight="44dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:background="@drawable/selector_default_ripple"
+            android:minHeight="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/comment"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <EditText
+                android:id="@+id/blank_sender_comment"
+                android:focusable="false"
+                android:textColorHint="@color/gray_hint"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/frame_gray_light"
+                android:textSize="15sp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:hint="@string/comment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/arrow_right"
+                android:layout_width="7dp"
+                android:layout_height="13dp" />
+        </FrameLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <View
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_gravity="bottom"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/blank_sender_ripple_date"
+        android:layout_marginTop="3dp"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/turquoise_50"
+        app:mrl_rippleDuration="400"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleFadeDuration="300"
+        android:layout_width="match_parent"
+        android:minHeight="44dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:background="@drawable/selector_default_ripple"
+            android:minHeight="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/calendar_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <EditText
+                android:id="@+id/blank_sender_date"
+                android:focusable="false"
+                android:layout_gravity="center_vertical"
+                android:textColorHint="@color/gray_hint"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:textColor="@color/frame_gray_light"
+                android:textSize="15sp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:hint="@string/date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/arrow_right"
+                android:layout_width="7dp"
+                android:layout_height="13dp" />
+        </FrameLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <View
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_gravity="bottom"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/blank_sender_ripple_time"
+        android:layout_marginTop="3dp"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/turquoise_50"
+        app:mrl_rippleDuration="400"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleFadeDuration="300"
+        android:layout_width="match_parent"
+        android:minHeight="44dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:background="@drawable/selector_default_ripple"
+            android:minHeight="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/clock_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <EditText
+                android:id="@+id/blank_sender_time"
+                android:focusable="false"
+                android:layout_gravity="center_vertical"
+                android:textColorHint="@color/gray_hint"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:textColor="@color/frame_gray_light"
+                android:textSize="15sp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:hint="@string/time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/arrow_right"
+                android:layout_width="7dp"
+                android:layout_height="13dp" />
+        </FrameLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <View
+        android:layout_gravity="bottom"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:textColor="@color/turquoise"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/sender_upper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_gravity="bottom"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/blank_sender_ripple_whom"
+        android:layout_marginTop="3dp"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/turquoise_50"
+        app:mrl_rippleDuration="400"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleFadeDuration="300"
+        android:layout_width="match_parent"
+        android:minHeight="44dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:background="@drawable/selector_default_ripple"
+            android:minHeight="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/person_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <EditText
+                android:id="@+id/blank_sender_whom"
+                android:focusable="false"
+                android:textColorHint="@color/gray_hint"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/frame_gray_light"
+                android:textSize="15sp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:hint="@string/who"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/arrow_right"
+                android:layout_width="7dp"
+                android:layout_height="13dp" />
+        </FrameLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <View
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_gravity="bottom"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:id="@+id/blank_sender_ripple_phone"
+        app:mrl_rippleBackground="@color/white"
+        app:mrl_rippleColor="@color/turquoise_50"
+        app:mrl_rippleDuration="400"
+        app:mrl_rippleAlpha="0.5"
+        app:mrl_rippleFadeDuration="300"
+        android:layout_width="match_parent"
+        android:minHeight="44dp"
+        android:layout_height="wrap_content">
+        <FrameLayout
+            android:background="@drawable/selector_default_ripple"
+            android:minHeight="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginStart="15dp"
+                android:src="@drawable/phone_icon"
+                android:layout_width="18dp"
+                android:layout_height="18dp" />
+            <EditText
+                android:id="@+id/blank_sender_phone"
+                android:focusable="false"
+                android:textColorHint="@color/gray_hint"
+                android:background="@color/transparent"
+                android:enabled="false"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/frame_gray_light"
+                android:textSize="15sp"
+                android:layout_marginLeft="44dp"
+                android:layout_marginStart="44dp"
+                android:hint="@string/seven"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <ImageView
+                android:layout_gravity="center_vertical|end"
+                android:layout_marginRight="15dp"
+                android:layout_marginEnd="15dp"
+                android:src="@drawable/arrow_right"
+                android:layout_width="7dp"
+                android:layout_height="13dp" />
+        </FrameLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+    <View
+        android:layout_gravity="bottom"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>
+    </ScrollView>

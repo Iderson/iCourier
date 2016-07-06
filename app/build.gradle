@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    productFlavors {
+        // Define separate dev and prod product flavors.
+        dev {
+            // dev utilizes minSDKVersion = 21 to allow the Android gradle plugin
+            // to pre-dex each module and produce an APK that can be tested on
+            // Android Lollipop without time consuming dex merging processes.
+            minSdkVersion 21
+        }
+        prod {
+            // The actual minSdkVersion for the application.
+            minSdkVersion 15
+        }
+    }
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        multiDexEnabled = true
+        applicationId "com.iv.icourier"
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+//        minSdkVersion 15
+        renderscriptTargetApi 20
+        renderscriptSupportModeEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    compile ('com.h6ah4i.android.widget.advrecyclerview:advrecyclerview:0.9.1@aar'){
+        transitive=true
+    }
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:multidex:1.0.1'
+
+    compile 'com.google.android.gms:play-services:9.0.2'
+    compile 'com.google.android.gms:play-services-maps:9.0.2'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'de.hdodenhof:circleimageview:2.0.0'
+
+//    compile 'pl.charmas.android:android-reactive-location:0.8@aar'
+    compile 'io.reactivex:rxjava:1.0.14'
+    compile 'io.reactivex:rxandroid:0.25.0'
+    compile 'com.balysv:material-ripple:1.0.2'
+    compile 'com.github.chenupt.android:dragtoplayout:1.2.1@aar'
+    compile 'com.ogaclejapan.smarttablayout:library:1.6.0@aar'
+//    compile 'com.kyleduo.switchbutton:library:1.3.4'
+    compile 'de.greenrobot:eventbus:2.4.0'
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    compile 'com.github.500px:500px-android-blur:c8bc82cea7'
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    compile 'com.github.orhanobut:hawk:1.21'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.yalantis:ucrop:1.2.4'
+
+}
+repositories {
+    maven { url "https://jitpack.io" }
+}

@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="67dp"
+            android:layout_marginStart="67dp"
+            android:layout_marginRight="67dp"
+            android:layout_marginEnd="67dp"
+            android:text="@string/card_text"
+            android:textColor="@color/gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <View
+            android:layout_gravity="bottom"
+            android:layout_marginTop="20dp"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <com.balysv.materialripple.MaterialRippleLayout
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:minHeight="44dp"
+                android:background="@drawable/selector_default_ripple"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <EditText
+                    android:text="1000 \u20BD"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:hint="@string/sum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <TextView
+            android:layout_marginTop="21dp"
+            android:layout_gravity="start"
+            android:textColor="@color/turquoise"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:text="@string/detail_of_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/recharge_card_ripple_number"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/card_icon"
+                    android:layout_width="14dp"
+                    android:layout_height="11dp" />
+                <EditText
+                    android:id="@+id/recharge_card_number"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:hint="@string/card_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/recharge_card_ripple_name"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/loaders_icon"
+                    android:layout_width="13dp"
+                    android:layout_height="12dp" />
+                <EditText
+                    android:id="@+id/recharge_card_name"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:hint="@string/name_and_last_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/recharge_card_ripple_date"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/calendar_icon"
+                    android:layout_width="14dp"
+                    android:layout_height="16dp" />
+                <EditText
+                    android:id="@+id/recharge_card_date"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:hint="@string/validity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ImageView
+                    android:layout_gravity="center_vertical|end"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
+                    android:src="@drawable/arrow_right"
+                    android:layout_width="7dp"
+                    android:layout_height="13dp" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_marginLeft="44dp"
+            android:layout_marginStart="44dp"
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <com.balysv.materialripple.MaterialRippleLayout
+            android:id="@+id/recharge_card_ripple_cvv"
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/lock"
+                    android:layout_width="12dp"
+                    android:layout_height="16dp" />
+                <EditText
+                    android:id="@+id/recharge_card_cvv"
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:hint="@string/cvv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_marginTop="17dp"
+            android:layout_height="1dp" />
+        <com.balysv.materialripple.MaterialRippleLayout
+            app:mrl_rippleBackground="@color/white"
+            app:mrl_rippleColor="@color/turquoise_50"
+            app:mrl_rippleDuration="400"
+            app:mrl_rippleAlpha="0.5"
+            app:mrl_rippleFadeDuration="300"
+            android:layout_width="match_parent"
+            android:minHeight="44dp"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:background="@drawable/selector_default_ripple"
+                android:minHeight="44dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginStart="15dp"
+                    android:src="@drawable/check"
+                    android:layout_width="14dp"
+                    android:layout_height="14dp" />
+                <EditText
+                    android:textColorHint="@color/gray_hint"
+                    android:background="@color/transparent"
+                    android:enabled="false"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="44dp"
+                    android:layout_marginStart="44dp"
+                    android:text="@string/tie_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <android.support.v7.widget.SwitchCompat
+                    app:showText="false"
+                    android:clickable="false"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_gravity="end|center_vertical"
+                    android:layout_width="51dp"
+                    android:layout_height="31dp"/>
+            </FrameLayout>
+        </com.balysv.materialripple.MaterialRippleLayout>
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <View
+            android:layout_gravity="bottom"
+            android:background="@color/divider_gray_light"
+            android:layout_width="match_parent"
+            android:layout_marginTop="50dp"
+            android:layout_height="1dp" />
+        <FrameLayout
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_turquoise_dark_frame"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:id="@+id/recharge_price_text"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@string/recharge_thousand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

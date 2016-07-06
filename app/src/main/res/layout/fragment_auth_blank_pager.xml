@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical" android:layout_width="match_parent"
+                android:id="@+id/blank_pager_container"
+                android:layout_height="match_parent">
+
+
+    <com.iv.icourier.views.NonSwipableViewPager
+        android:id="@+id/blank_pager"
+        android:layout_above="@+id/blank_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <LinearLayout
+        android:id="@+id/blank_tabs"
+        android:layout_marginBottom="15dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" android:layout_above="@+id/blank_start"
+        android:layout_centerHorizontal="true">
+        <View
+            android:id="@+id/blank_tab_one"
+            android:background="@drawable/selector_tab_blank"
+            android:layout_width="7dp"
+            android:layout_height="7dp" />
+        <View
+            android:id="@+id/blank_tab_two"
+            android:layout_marginRight="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/selector_tab_blank"
+            android:layout_width="7dp"
+            android:layout_height="7dp" />
+        <View
+            android:id="@+id/blank_tab_three"
+            android:background="@drawable/selector_tab_blank"
+            android:layout_width="7dp"
+            android:layout_height="7dp" />
+    </LinearLayout>
+    <FrameLayout
+        android:id="@+id/blank_start"
+        android:background="@drawable/selector_white_turquoise_transparent_frame"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="44dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginRight="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginLeft="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:id="@+id/blank_next_text"
+            android:textSize="12sp"
+            android:textColor="@color/turquoise"
+            android:text="@string/start"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+    <View
+        android:id="@+id/blank_back"
+        android:layout_width="56dp"
+        android:layout_height="56dp" />
+</RelativeLayout>

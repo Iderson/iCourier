@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.iv.icourier">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".ICApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/MainTheme">
+
+        <!-- release key map -->
+        <meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyClHIedgGxTW-lJeu4sf5_TIbh8JNbgfyY" />
+
+        <!-- debug key map -->
+        <!--<meta-data android:name="com.google.android.geo.API_KEY" android:value="AIzaSyBRpoN10nEU-ZytEdZjTg1dhJGLHBkFko0" />-->
+
+        <activity
+            android:name=".activities.SplashScreen"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.OnBoardingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DarkTheme"  />
+        <activity
+            android:name=".activities.EntranceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DarkTheme"  />
+        <activity
+            android:name=".activities.MainClientActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DarkTheme"  />
+        <activity
+            android:name=".activities.OrderActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".activities.BlankActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DarkTheme" />
+        <activity
+            android:name=".activities.PriceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".activities.NewPriceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".activities.RechargeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".activities.PhoneActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".activities.RegisterCourierActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".activities.AddCarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".activities.MainCourierActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DarkTheme" />
+        <activity
+            android:name=".activities.OrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DarkTheme" />
+        <activity
+            android:name=".activities.ChooseCarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".activities.BalanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".activities.EditProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:name=".activities.CourierOrderDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme" />
+        <activity
+            android:screenOrientation="portrait"
+            android:theme="@style/BlueTheme"
+            android:name=".activities.QuestionnaireActivity" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>

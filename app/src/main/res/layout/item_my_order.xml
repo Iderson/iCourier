@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.balysv.materialripple.MaterialRippleLayout
+    android:id="@+id/item_my_order_ripple"
+    app:mrl_rippleBackground="@color/white"
+    app:mrl_rippleColor="@color/turquoise_50"
+    app:mrl_rippleDuration="400"
+    app:mrl_rippleAlpha="0.5"
+    app:mrl_rippleFadeDuration="300"
+    android:layout_width="match_parent"
+    android:minHeight="44dp"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/item_my_order_right_view"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:background="@drawable/selector_default_ripple"
+        android:padding="15dp"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/item_my_order_name"
+            android:textColor="@color/frame_gray_light"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:layout_marginTop="6dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/calendar_icon"
+                android:layout_width="14dp"
+                android:layout_height="16dp" />
+            <TextView
+                android:id="@+id/item_my_order_date"
+                android:textSize="13sp"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="14dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="13dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_height="match_parent">
+                <FrameLayout
+                    android:layout_marginEnd="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_marginBottom="2dp"
+                    android:background="@drawable/background_gray_stroke_without_right"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+                <ImageView
+                    android:layout_gravity="end|bottom"
+                    android:src="@drawable/gray_arrow"
+                    android:layout_width="3dp"
+                    android:layout_height="4dp" />
+            </FrameLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:id="@+id/item_my_order_address_from"
+                    android:textColor="@color/frame_gray_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/metro_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/item_my_order_metro_start"
+                        android:textColor="@color/green"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/item_my_order_address_to"
+                    android:layout_marginTop="9dp"
+                    android:textColor="@color/frame_gray_light"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/metro_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/item_my_order_metro_end"
+                        android:textColor="@color/dark_blue"
+                        android:layout_marginLeft="11dp"
+                        android:layout_marginStart="11dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_marginTop="14dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/upload_icon"
+                android:layout_width="11dp"
+                android:layout_height="16dp" />
+            <TextView
+                android:id="@+id/item_my_order_status"
+                android:textSize="13sp"
+                android:textColor="@color/gray"
+                android:layout_marginLeft="29dp"
+                android:layout_marginStart="29dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</com.balysv.materialripple.MaterialRippleLayout>

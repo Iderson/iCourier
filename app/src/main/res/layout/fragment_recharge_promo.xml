@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_marginTop="29dp"
+            android:src="@drawable/promo_large_icon"
+            android:layout_width="58dp"
+            android:layout_height="59dp" />
+
+        <TextView
+            android:textSize="13sp"
+            android:textColor="@color/gray"
+            android:gravity="center"
+            android:text="@string/promo_text"
+            android:layout_marginTop="22dp"
+            android:layout_marginLeft="75dp"
+            android:layout_marginStart="75dp"
+            android:layout_marginEnd="75dp"
+            android:layout_marginRight="75dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="20dp"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <EditText
+            android:id="@+id/promo_edit"
+            android:gravity="center"
+            android:hint="@string/write_promo"
+            android:background="@color/transparent"
+            android:textColor="@color/frame_gray_light"
+            android:minHeight="44dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <View
+            android:layout_marginTop="5dp"
+            android:background="@color/desert"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+        <FrameLayout
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/selector_turquoise_dark_frame"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:text="@string/ready_upper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <FrameLayout
+        android:id="@+id/courier_my_order_pager_toolbar"
+        android:background="@color/desert"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        <LinearLayout
+            android:layout_gravity="center"
+            android:background="@drawable/background_tabs_oval"
+            android:layout_width="match_parent"
+            android:layout_marginRight="42dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="42dp"
+            android:layout_height="26dp">
+            <FrameLayout
+                android:id="@+id/my_courier_my_orders_tab_in_work"
+                android:background="@drawable/selector_left_tab"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@drawable/selector_white_turquoise_activated_text"
+                    android:text="@string/in_work"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/my_courier_my_orders_tab_completed"
+                android:background="@drawable/selector_right_tab"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@drawable/selector_white_turquoise_activated_text"
+                    android:text="@string/completed"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+    <com.iv.icourier.views.NonSwipableViewPager
+        android:id="@+id/my_courier_my_orders_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+
+        android:background="@color/turquoise"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <TextView
+            android:id="@+id/phone_title"
+            android:textSize="17sp"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@color/white"
+            android:layout_gravity="center"
+            android:text="@string/my_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+    <LinearLayout
+        android:background="@color/turquoise"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:alpha="0.3"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+        <FrameLayout
+            android:layout_marginTop="9dp"
+            android:background="@drawable/background_gray_oval"
+            android:layout_width="74dp"
+            android:layout_height="74dp">
+            <FrameLayout
+                android:layout_gravity="center"
+                android:id="@+id/questionnaire_photo"
+                android:background="@drawable/selector_white_blue_around_frame"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:src="@drawable/camera"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:contentDescription="@string/app_name" />
+            </FrameLayout>
+        </FrameLayout>
+        <TextView
+            android:layout_marginTop="6dp"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="9dp"
+            android:textSize="12sp"
+            android:textColor="@color/turquoise_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

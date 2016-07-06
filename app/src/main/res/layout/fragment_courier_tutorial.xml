@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:paddingStart="19dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingEnd="15dp"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="4dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/questionnaire_first"
+                android:layout_width="50dp"
+                android:layout_height="58dp" />
+            <LinearLayout
+                android:layout_marginLeft="19dp"
+                android:layout_marginStart="19dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="20sp"
+                    android:text="@string/write_questionnaire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.5"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="13sp"
+                    android:text="@string/write_personal_data"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:src="@drawable/questionnaire_arrow_right"
+            android:layout_marginStart="26dp"
+            android:layout_marginLeft="26dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/questionnaire_second_image"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/questionnaire_second"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="44dp"
+                android:layout_height="63dp" />
+            <LinearLayout
+                android:layout_marginRight="21dp"
+                android:layout_marginEnd="21dp"
+                android:layout_toLeftOf="@+id/questionnaire_second_image"
+                android:layout_toStartOf="@+id/questionnaire_second_image"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="20sp"
+                    android:text="@string/wait_for_checking"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:gravity="end"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="7dp"
+                    android:alpha="0.5"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="13sp"
+                    android:text="@string/checking_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <ImageView
+            android:src="@drawable/questionnaire_arrow_left"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="39dp"
+            android:layout_marginEnd="39dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:src="@drawable/questionnaire_third"
+                android:layout_width="47dp"
+                android:layout_height="63dp" />
+            <LinearLayout
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="20sp"
+                    android:text="@string/start_work"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginRight="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="8dp"
+                    android:alpha="0.5"
+                    android:textColor="@color/frame_gray_light"
+                    android:textSize="13sp"
+                    android:text="@string/find_and_doing_orders"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <FrameLayout
+            android:id="@+id/courier_tutorial_action"
+            android:layout_marginTop="52dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/selector_turquoise_dark_frame"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:textColor="@color/white"
+                android:textSize="12sp"
+                android:text="@string/continue_upper"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center_horizontal"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/document"
+        android:layout_marginTop="53dp"
+        android:layout_width="76dp"
+        android:layout_height="113dp" />
+
+    <TextView
+        android:layout_marginTop="35dp"
+        android:textColor="@color/gray"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:text="@string/take_picture_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="34dp"
+        android:textColor="@color/turquoise"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="@string/passport"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:layout_gravity="bottom"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/courier_download_main_page"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_default_ripple"
+        android:minHeight="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_document_check"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:clickable="false"
+            android:text="@string/main_page_of_passport"
+            android:enabled="false"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/frame_gray_light"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"/>
+        <ImageView
+            android:layout_gravity="center_vertical|end"
+            android:background="@drawable/arrow_right"
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"/>
+    </RelativeLayout>
+    <View
+        android:layout_gravity="bottom"
+        android:layout_marginLeft="45dp"
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <RelativeLayout
+        android:id="@+id/courier_download_address_page"
+        android:orientation="horizontal"
+        android:background="@drawable/selector_default_ripple"
+        android:minHeight="44dp"
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+        <ImageView
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_document_check"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:id="@+id/imageView2"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:clickable="false"
+            android:text="@string/page_with_address"
+            android:enabled="false"
+            android:layout_gravity="center_vertical"
+            android:textColor="@color/frame_gray_light"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/imageView2"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"/>
+        <ImageView
+            android:layout_marginRight="15dp"
+            android:layout_gravity="center_vertical|end"
+            android:background="@drawable/arrow_right"
+            android:layout_width="7dp"
+            android:layout_height="13dp"
+            android:id="@+id/imageView3"
+            android:layout_marginEnd="17dp"
+            android:layout_centerVertical="true" android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+    <View
+        android:background="@color/divider_gray_light"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <FrameLayout
+            android:layout_gravity="bottom"
+            android:id="@+id/courier_document_action"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/selector_turquoise_dark_frame"
+            android:layout_width="match_parent"
+            android:layout_height="44dp">
+            <TextView
+                android:layout_gravity="center"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                android:text="@string/continue_upper"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </FrameLayout>
+    </FrameLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+    android:exitFadeDuration="200"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true"
+          android:drawable="@drawable/background_blue_transparent_around_stroke"/>
+    <item android:drawable="@drawable/background_white_around_stroke"/>
+</selector>

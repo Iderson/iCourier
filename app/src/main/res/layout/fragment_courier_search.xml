@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/search_map_container"
+        android:layout_width="match_parent"
+        android:layout_height="184dp">
+        <FrameLayout
+            android:id="@+id/search_map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <View
+            android:id="@+id/search_map_view"
+            android:background="@drawable/background_gradient_black"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/search_map_location"
+            android:visibility="gone"
+            android:layout_above="@+id/search_map_screen_change"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_white_turquoise_transparent_oval_frame"
+            android:layout_width="44dp"
+            android:layout_height="46dp" >
+            <ImageView
+                android:background="@drawable/my_location"
+                android:layout_gravity="center"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/search_map_screen_change"
+            android:layout_marginRight="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/selector_white_turquoise_transparent_oval_frame"
+            android:layout_width="44dp"
+            android:layout_height="46dp" >
+            <ImageView
+                android:background="@drawable/selector_change_screen_icon"
+                android:layout_gravity="center"
+                android:layout_width="22dp"
+                android:layout_height="22dp" />
+        </FrameLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:id="@+id/search_tabs"
+            android:layout_gravity="center"
+            android:background="@drawable/background_tabs_oval_white"
+            android:layout_width="match_parent"
+            android:layout_marginRight="42dp"
+            android:layout_marginEnd="42dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="42dp"
+            android:layout_height="26dp">
+            <FrameLayout
+                android:id="@+id/search_tab_distance"
+                android:background="@drawable/selector_left_tab_white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@drawable/selector_white_transparent_activated_text"
+                    android:text="@string/distance"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/search_tab_price"
+                android:background="@drawable/selector_right_tab_white"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent">
+                <TextView
+                    android:textColor="@drawable/selector_white_transparent_activated_text"
+                    android:text="@string/price_two"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </FrameLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/courier_search_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
